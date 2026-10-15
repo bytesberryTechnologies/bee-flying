@@ -30,7 +30,7 @@ const beeAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "/bee.json",
+  path: "/fly2.json",
 });
 
 const shadowAnimation = lottie.loadAnimation({
@@ -38,7 +38,7 @@ const shadowAnimation = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "/bee.json",
+  path: "/fly2.json",
 });
 
 // Flight path
