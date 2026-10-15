@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A smooth scrolling bee animation with image highlights."
+    />
+    <title>Bee Flying | Scroll Experience</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- Intro Section -->
+      <section class="intro">
+        <div class="section-content">
+          <span class="eyebrow">A little adventure</span>
+          <h1>Follow the Bee</h1>
+          <p>
+            A tiny bee, a beautiful journey, and five moments worth exploring.
+            Scroll down to follow its flight.
+          </p>
+          <span class="scroll-indicator">
+            <span class="scroll-line"></span>
+            Scroll to explore
+          </span>
+        </div>
+      </section>
+
+      <!-- Image Spotlight Section -->
+      <section class="spotlight">
+        <div class="spotlight-heading">
+          <span class="eyebrow">The journey</span>
+          <h2>Moments in Nature</h2>
+        </div>
+
+        <div class="spotlight-item">
+          <img src="./img1.jpg" alt="Nature scene one" />
+          <div class="spotlight-item-copy">
+            <p>Discover</p>
+            <span>01 / 05</span>
+          </div>
+        </div>
+
+        <div class="spotlight-item">
+          <img src="./img2.jpg" alt="Nature scene two" />
+          <div class="spotlight-item-copy">
+            <p>Explore</p>
+            <span>02 / 05</span>
+          </div>
+        </div>
+
+        <div class="spotlight-item">
+          <img src="./img3.jpg" alt="Nature scene three" />
+          <div class="spotlight-item-copy">
+            <p>Wander</p>
+            <span>03 / 05</span>
+          </div>
+        </div>
+
+        <div class="spotlight-item">
+          <img src="./img4.jpg" alt="Nature scene four" />
+          <div class="spotlight-item-copy">
+            <p>Observe</p>
+            <span>04 / 05</span>
+          </div>
+        </div>
+
+        <div class="spotlight-item">
+          <img src="./img5.jpg" alt="Nature scene five" />
+          <div class="spotlight-item-copy">
+            <p>Bloom</p>
+            <span>05 / 05</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Outro Section -->
+      <section class="outro">
+        <div class="section-content">
+          <span class="eyebrow">Every journey matters</span>
+          <h2>Small Wings.<br />Big Adventures.</h2>
+          <p>
+            Sometimes the smallest things lead us to the most beautiful places.
+          </p>
+          <a
+            class="back-to-top"
+            href="#top"
+            onclick="
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+              return false;
+            "
+          >
+            Back to the beginning ↑
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bee animation layers -->
+    <div class="lottie-container" aria-hidden="true">
+      <div class="bee-shadow"></div>
+      <div class="bee"></div>
+    </div>
+
+    <!-- JavaScript entry point -->
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
